@@ -1,4 +1,4 @@
-import LogoTitle from '../../assets/images/logo-s.png'
+import LogoTitle from '../../assets/images/logo-j.png'
 import {Link} from 'react-router-dom'
 import './index.scss'
 import { useEffect, useState } from 'react'
@@ -7,7 +7,7 @@ import Logo from './Logo'
 
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
-    const nameArray = ['l', 'o', 'b', 'o', 'd', 'a', 'n']
+    const nameArray = ['J', 'u', 'l', 'i', 'a', 'n']
     const webArray = ['w' , 'e', 'b']
     const devArray = ['d', 'e', 'v', 'e', 'l', 'o', 'p', 'e', 'r', '.']
 
@@ -28,8 +28,9 @@ const Home = () => {
 
                     <span className={`${letterClass} _13`}>I</span>
                     <span className={`${letterClass} _14`}>'m</span>
+                    <span> </span>
 
-                    <img src={LogoTitle} alt="developer" />
+                    {/* <img src={LogoTitle} alt="developer" /> */}
 
                     <AnimatedLetters 
                     letterClass={letterClass}
@@ -53,7 +54,7 @@ const Home = () => {
                     idx={24}
                     />
                 </h1>
-                <h2> Full-Stack Web Developer / JavaScript</h2>
+                <h2> Full-Stack Web Developer</h2>
                 <Link to="/contact" className="flat-button">
                     CONTACT ME
                 </Link>

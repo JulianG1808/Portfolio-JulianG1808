@@ -1,4 +1,4 @@
-$primary-color: #ffd700;
+$primary-color: #e40046;
 
 @import 'animate.css';
 @import '~loaders.css/src/animations/pacman.scss';
@@ -22,6 +22,14 @@ $primary-color: #ffd700;
   font-family: 'Coolvetica';
   src: url('./assets/fonts/CoolveticaRg-Regular.woff2') format('woff2'),
     url('./assets/fonts/CoolveticaRg-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Titillium';
+  src: url('./assets/fonts/Titillium-Regular.otf') format('otf'),
+    url('./assets/fonts/Titillium-Regular.otf') format('otf');
   font-weight: normal;
   font-style: normal;
 }

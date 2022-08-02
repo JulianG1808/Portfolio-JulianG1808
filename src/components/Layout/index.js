@@ -8,8 +8,13 @@ const Layout  = () => {
             <Sidebar />
             <div className='page'>
                 <span className='tags top-tags'>
-                    &lt;body&gt;
+                        &lt;/html&gt;
+                        <br />
+                        <span className='top-tag-body'>
+                            &lt;body&gt;
+                        </span>
                 </span>
+                
 
                 <Outlet />
 
