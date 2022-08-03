@@ -27,6 +27,7 @@ const Sidebar = () => (
         <ul>
             <li>
                 <a 
+                    className='Linkedin-icon'
                     target='_blank'
                     rel='noreferrer'
                     href='https://www.linkedin.com/in/leandrojuliangomez/'
@@ -36,6 +37,7 @@ const Sidebar = () => (
             </li>
             <li>
                 <a 
+                    className='Github-icon'
                     target='_blank'
                     rel='noreferrer'
                     href='https://github.com/JulianG1808'

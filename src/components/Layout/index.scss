@@ -14,7 +14,7 @@
 }
 
 .tags {
-    color: #ff8000;
+    color: #fff200;
     opacity: 0.6;
     position: absolute;
     bottom: 0;
@@ -66,7 +66,7 @@
             &::before {
                 content: '<h1>';
                 font-family: 'La Belle Aurore';
-                color: #ff8000;
+                color: #fff200;
                 font-size: 18px;
                 position: absolute;
                 margin-top: -10px;
@@ -78,7 +78,7 @@
             &::after {
                 content: '</h1>';
                 font-family: 'La Belle Aurore';
-                color: #ff8000;
+                color: #fff200;
                 font-size: 18px;
                 line-height: 18px;
                 position: absolute;
@@ -117,7 +117,7 @@
             &::before {
                 content: '<p>';
                 font-family: 'La Belle Aurore';
-                color: #ff8000;
+                color: #fff200;
                 font-size: 18px;
                 position: absolute;
                 margin-top: -10px;
@@ -130,7 +130,7 @@
             &::after {
                 content: '</p>';
                 font-family: 'La Belle Aurore';
-                color: #ff8000;
+                color: #fff200;
                 font-size: 18px;
                 line-height: 18px;
                 position: absolute;
@@ -144,7 +144,7 @@
 
     .text-animate-hover {
         &:hover {
-            color:#00a3e0;
+            color:#fff;
         }
     }
 }

@@ -108,13 +108,55 @@
 
         li {
             a {
-                padding: 7px 0;
-                display: block;
                 font-size: 22px;
-                line-height: 16px;
-
-                &:hover svg {
+                color: #4d4d4e;
+                display: block;
+                line-height: 51px;
+                height: 51px;
+                position: relative;
+                text-decoration: none;
+    
+                i {
+                    transition: all 0.3s ease-out;
+                }
+    
+                &:hover {
                     color: #e40046;
+    
+                    svg {
+                        opacity: 0;
+                    }
+    
+                    &:after {
+                        opacity: 1;
+                    }
+                }
+    
+                &:after {
+                    content: '';
+                    font-size: 9px;
+                    letter-spacing: 2px;
+                    position: absolute;
+                    bottom: 0;
+                    display: block;
+                    width: 100%;
+                    text-align: center;
+                    opacity: 0;
+                    transition: all 0.3s ease-out;
+                }
+    
+                
+            }
+            
+            a.Linkedin-icon{
+                &:after{
+                    content: 'LINKEDIN';
+                }
+            }
+
+            a.Github-icon{
+                &:after{
+                    content: 'GITHUB';
                 }
             }
         }
