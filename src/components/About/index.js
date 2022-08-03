@@ -29,9 +29,11 @@ const About = () => {
                     idx={15}
                     />  
                 </h1>
-                <p>Lorem ipsum dolor sit amet. Est voluptate ipsam et voluptas voluptatem ut accusantium molestias 33 sequi consequatur et quia et officia consequuntur. Vel nostrum autem ex voluptas voluptatem hic expedita voluptas id provident veritatis ut iste delectus? Quo corporis internos in veritatis molestiae et consequuntur ipsum eum sequi alias?</p>
-                <p>Lorem ipsum dolor sit amet. Est voluptate ipsam et voluptas voluptatem ut accusantium molestias 33 sequi consequatur et quia et officia consequuntur. Vel nostrum autem ex voluptas voluptatem hic expedita voluptas id provident veritatis ut iste delectus? Quo corporis internos in veritatis molestiae et consequuntur ipsum eum sequi alias?</p>
-                <p>Lorem ipsum dolor sit amet. Est voluptate ipsam et voluptas voluptatem ut accusantium molestias 33 sequi consequatur et quia et officia consequuntur. Vel nostrum autem ex voluptas voluptatem hic expedita voluptas id provident veritatis ut iste delectus? Quo corporis internos in veritatis molestiae et consequuntur ipsum eum sequi alias?</p>
+                <div className='info-cont'>
+                    <p>Lorem ipsum dolor sit amet. Est voluptate ipsam et voluptas voluptatem ut accusantium molestias 33 sequi consequatur et quia et officia consequuntur. Vel nostrum autem ex voluptas voluptatem hic expedita voluptas id provident veritatis ut iste delectus? Quo corporis internos in veritatis molestiae et consequuntur ipsum eum sequi alias?</p>
+                    <p>Lorem ipsum dolor sit amet. Est voluptate ipsam et voluptas voluptatem ut accusantium molestias 33 sequi consequatur et quia et officia consequuntur. Vel nostrum autem ex voluptas voluptatem hic expedita voluptas id provident veritatis ut iste delectus? Quo corporis internos in veritatis molestiae et consequuntur ipsum eum sequi alias?</p>
+                    <p>Lorem ipsum dolor sit amet. Est voluptate ipsam et voluptas voluptatem ut accusantium molestias 33 sequi consequatur et quia et officia consequuntur. Vel nostrum autem ex voluptas voluptatem hic expedita voluptas id provident veritatis ut iste delectus? Quo corporis internos in veritatis molestiae et consequuntur ipsum eum sequi alias?</p>
+                </div>
             </div>
 
             <div className='stage-cube-cont'>
