@@ -1,4 +1,3 @@
-import LogoTitle from '../../assets/images/logo-j.png'
 import {Link} from 'react-router-dom'
 import './index.scss'
 import { useEffect, useState } from 'react'
@@ -8,9 +7,9 @@ import Loader from 'react-loaders'
 
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
-    const nameArray = ['J', 'u', 'l', 'i', 'a', 'n']
-    const webArray = ['w' , 'e', 'b']
-    const devArray = ['d', 'e', 'v', 'e', 'l', 'o', 'p', 'e', 'r', '.']
+    const nameArray = 'Julian'.split('')
+    const webArray = 'web'.split('')
+    const devArray = 'developer'.split('')
 
     useEffect(() => {
         setTimeout(() => {
