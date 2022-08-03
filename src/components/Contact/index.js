@@ -35,13 +35,13 @@ const Contact = () => {
                     <h1>
                         <AnimatedLetters
                             letterClass={letterClass} 
-                            strArray={['C', 'o', 'n', 't', 'a', 'c', 't']}
+                            strArray={'Contact'.split('')}
                             idx={15}
                         />
                         <span> </span>
                         <AnimatedLetters
                             letterClass={letterClass} 
-                            strArray={['m', 'e']}
+                            strArray={'me'.split('')}
                             idx={15}
                         />
                     </h1>
