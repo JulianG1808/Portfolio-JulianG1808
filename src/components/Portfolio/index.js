@@ -3,12 +3,11 @@ import './index.scss'
 import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters';
 import portfolioData from '../../data/portfolio.json'
+import { useTranslation } from 'react-i18next';
 
 const Portfolio = () => {
+    const [t, /* i18n */] = useTranslation('portfolio')
     const [letterClass, setLetterClass] = useState('text-animate')
-    console.log(portfolioData)
-
-
 
     useEffect(() => {
         const timer = setTimeout(() => {
@@ -34,7 +33,7 @@ const Portfolio = () => {
                                     <button 
                                     className='btn' 
                                     onClick={() => window.open(port.url)}>
-                                        View
+                                        {t("btnProject")}
                                     </button>
                                 </div>
                             </div>
@@ -51,7 +50,7 @@ const Portfolio = () => {
             <h1 className='page-title'>
                 <AnimatedLetters 
                 letterClass={letterClass}
-                strArray={'Projects'.split('')}
+                strArray={t("title").split('')}
                 idx={15}
                 />
             </h1>

@@ -4,12 +4,18 @@ import { useEffect, useState } from 'react'
 import AnimatedLetters from '../AnimatedLetters'
 import Logo from './Logo'
 import Loader from 'react-loaders'
+import { useTranslation } from 'react-i18next'
 
 const Home = () => {
+    const [t, /* i18n */] = useTranslation('home')
+
     const [letterClass, setLetterClass] = useState('text-animate')
-    const nameArray = 'Julian'.split('')
-    const webArray = 'web'.split('')
-    const devArray = 'developer.'.split('')
+    const nameArray = 'Julian,'.split('')
+    const h1ArrayFirst = t("h1DevFirst").split('')
+    const h1ArraySecond = t("h1DevSecond").split('')
+    const greeting = t("greeting").split('')
+    const am = t("am").split('')
+
 
     useEffect(() => {
         setTimeout(() => {
@@ -22,13 +28,20 @@ const Home = () => {
         <div className="container home-page">
             <div className="text-zone">
                 <h1>
-                    <span className={letterClass}>H</span>
-                    <span className={`${letterClass} _12`}>i</span>
+                    <AnimatedLetters 
+                    letterClass={letterClass}
+                    strArray={greeting}
+                    idx={1}
+                    />
                     
                     <br />
 
-                    <span className={`${letterClass} _13`}>I</span>
-                    <span className={`${letterClass} _14`}>'m</span>
+                    <AnimatedLetters 
+                    letterClass={letterClass}
+                    strArray={am}
+                    idx={5}
+                    />
+
                     <span> </span>
 
                     {/* <img src={LogoTitle} alt="developer" /> */}
@@ -43,7 +56,7 @@ const Home = () => {
 
                     <AnimatedLetters 
                     letterClass={letterClass}
-                    strArray={webArray}
+                    strArray={h1ArrayFirst}
                     idx={22}
                     />
 
@@ -51,13 +64,13 @@ const Home = () => {
 
                     <AnimatedLetters 
                     letterClass={letterClass}
-                    strArray={devArray}
+                    strArray={h1ArraySecond}
                     idx={24}
                     />
                 </h1>
-                <h2> Full-Stack Web Developer</h2>
+                <h2>{t("JobTitle")}</h2>
                 <Link to="/contact" className="flat-button">
-                    CONTACT ME
+                    {t("btnContact")}
                 </Link>
             </div>
             <Logo />

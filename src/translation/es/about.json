@@ -1,0 +1,9 @@
+{
+    "titleFirst": "Sobre",
+    "titleSecond": "mí",
+    "paragraphFirst": "Soy un Full Stack Web Developer, orientado a FrontEnd y tambien un Técnico Informático.",
+    "paragraphSecond": "Me considero buen compañero, resolutivo, investigador, adaptable, responsable, autodidacta, tengo la capacidad de estar concentrado.",
+    "paragraphThird": "Entre otras cosas mas personales, estoy apasionado por el IT, en mi ocio suelo estar jugando algun videojuego, viendo automovilismo deportivo, investigando sobre la mecanica automotriz o aprendiendo nuevas cosas del mundo IT para asi aumentar y mejorar mis saberes en el Tech Stack.",
+    "paragraphFourth": "Tech Stack: <br /> Con conocimientos en el lenguaje JavaScript; <br /> en FrontEnd: React, Redux, CSS3, HTML5, SASS; <br /> en BackEnd: Express, Sequelize, NodeJS; <br /> Base de Datos: SQL, Postgre; <br /> manejo de versiones con Git."
+
+}

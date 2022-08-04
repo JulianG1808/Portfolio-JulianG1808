@@ -5,14 +5,50 @@ import LogoSubtitle from '../../assets/images/logo_sub.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHome, faMessage, faUser, faBriefcase } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { useTranslation } from 'react-i18next'
 
+const Sidebar = () => {
+    const [t, i18n] = useTranslation('sidebar')
+    const languageDefault = localStorage.getItem("language")
 
-const Sidebar = () => (
+    const handleChangeLanguage = () => {
+        if(languageDefault === "en" || i18n.language === "en") {
+            i18n.changeLanguage("es")
+            localStorage.setItem("language", "es")
+        } 
+        else if(languageDefault === "es" || i18n.language === "es") {
+            i18n.changeLanguage("en")
+            localStorage.setItem("language", "en")
+        }
+    }
+
+    return (
     <div className='nav-bar'>
         <Link className='logo' to='/'>
-            <img src={LogoJ} alt='logo' />
+            <img src={LogoJ} alt='logo' width="50px"/>
             <img className='sub-logo' src={LogoSubtitle} alt='slobodan' />
         </Link>
+
+        <div className='lang-menu'>
+                <select className='selected-lang'>
+                    <option value='changeLanguage'>{t("chooseLanguage")}</option>
+                    <option
+                    value='en'
+                    disabled={i18n.language === "en"}
+                    onClick={() => handleChangeLanguage()}
+                    >
+                        EN
+                    </option>
+                    <option
+                    value='es'
+                    disabled={i18n.language === "es"}
+                    onClick={() => handleChangeLanguage()}
+                    >
+                        ES
+                    </option>
+                </select>
+        </div>
+
         <nav>
             <NavLink exact='true' activeclassname='active' to='/'>
                 <FontAwesomeIcon icon={faHome} color='#4d4d4e'/>
@@ -50,6 +86,6 @@ const Sidebar = () => (
             </li>
         </ul>
     </div>
-)
+)}
 
 export default Sidebar

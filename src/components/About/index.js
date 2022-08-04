@@ -4,8 +4,10 @@ import { useEffect, useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCss3Alt, faGitAlt, faHtml5, faJsSquare, faNode, faReact } from '@fortawesome/free-brands-svg-icons'
 import Loader from 'react-loaders'
+import { useTranslation } from 'react-i18next'
 
 const About = () => {
+    const [t, /* i18n */] = useTranslation('about')
     const [letterClass, setLetterClass] = useState('text-animate')
 
     useEffect(() => {
@@ -21,33 +23,21 @@ const About = () => {
                     <h1>
                         <AnimatedLetters
                         letterClass={letterClass}
-                        strArray={'About'.split('')} 
+                        strArray={t("titleFirst").split('')} 
                         idx={15}
                         />
                         <span> </span>
                         <AnimatedLetters
                         letterClass={letterClass}
-                        strArray={'me'.split('')} 
+                        strArray={t("titleSecond").split('')} 
                         idx={15}
                         />  
                     </h1>
                     <div className='info-cont'>
-                        <p>
-                        Soy un Full Stack Web Developer, orientado a FrontEnd y tambien un Técnico Informático.
-                        </p>
-                        <p>
-                        Me considero buen compañero, resolutivo, investigador, adaptable, responsable, autodidacta, tengo la capacidad de estar concentrado.
-                        <br />
-                        Entre otras cosas mas personales, estoy apasionado por el IT, en mi ocio suelo estar jugando algun videojuego, viendo automovilismo deportivo, investigando sobre la mecanica automotriz o aprendiendo nuevas cosas del mundo IT para asi aumentar y mejorar mis saberes en el Tech Stack.
-                        </p>
-                        <p>
-                        Tech Stack: <br />
-                        Con conocimientos en el lenguaje JavaScript; <br />
-                        en FrontEnd: React, Redux, CSS3, HTML5, SASS; <br />
-                        en BackEnd: Express, Sequelize, NodeJS; <br />
-                        Base de Datos: SQL, Postgre; <br />
-                        manejo de versiones con Git.
-                        </p>
+                        <p>{t("paragraphFirst")}</p>
+                        <p>{t("paragraphSecond")}</p>
+                        <p>{t("paragraphThird")}</p>
+                        <p>{t("paragraphFourth")}</p>
                     </div>
                 </div>
 

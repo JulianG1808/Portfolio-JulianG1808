@@ -4,8 +4,10 @@ import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
 import emailjs from '@emailjs/browser'
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
+import { useTranslation } from 'react-i18next'
 
 const Contact = () => {
+    const [t, /* i18n */] = useTranslation('contact')
     const [letterClass, setLetterClass] = useState('text-animate')
     const refForm = useRef()
 
@@ -35,40 +37,36 @@ const Contact = () => {
                     <h1>
                         <AnimatedLetters
                             letterClass={letterClass} 
-                            strArray={'Contact'.split('')}
+                            strArray={t("titleFirst").split('')}
                             idx={15}
                         />
                         <span> </span>
                         <AnimatedLetters
                             letterClass={letterClass} 
-                            strArray={'me'.split('')}
+                            strArray={t("titleSecond").split('')}
                             idx={15}
                         />
                     </h1>
                     <div className='info-cont'>
-                        <p>
-                        Estoy en la busqueda de un trabajo IT, donde pueda desempeñar mis habilidades tecnicas, 
-                        utilizando las ultimas tecnologias que sé y las que pueda aprender. <br />
-                        Tambien busco estar en un buen ambiente laboral, con buenos compañeros y buenos trabajadores.
-                        </p>
+                        <p>{t("paragraph")}</p>
                     </div>
                     <div className='contact-form'>
                         <form ref={refForm} onSubmit={sendEmail}>
                             <ul>
                                 <li className='half'>
-                                    <input type='text' name='name' placeholder='Name' required />
+                                    <input type='text' name='name' placeholder={t("inputName")} required />
                                 </li>
                                 <li className='half'>
-                                    <input type='email' name='email' placeholder='Email' required />
+                                    <input type='email' name='email' placeholder={t("inputEmail")} required />
                                 </li>
                                 <li>
-                                    <input placeholder='Subject' type='text' name='subject' required />
+                                    <input placeholder={t("inputSubject")} type='text' name='subject' required />
                                 </li>
                                 <li>
-                                    <textarea placeholder='Message' name='message' required></textarea>
+                                    <textarea placeholder={t("inputMessage")} name='message' required></textarea>
                                 </li>
                                 <li>
-                                    <input type='submit' className='flat-button' value='SEND'/>
+                                    <input type='submit' className='flat-button' value={t("inputSend")}/>
                                 </li>
                             </ul>
                         </form>
@@ -87,7 +85,7 @@ const Contact = () => {
                     <MapContainer center={[-27.7879897, -64.2655273]} zoom={13}>
                         <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
                         <Marker position={[-27.7879897, -64.2655273]}>
-                            <Popup>Julian lives in this city, come over for a cup of coffee :)</Popup>
+                            <Popup>{t("popUpInMap")}</Popup>
                         </Marker>
                     </MapContainer>
                 </div>
