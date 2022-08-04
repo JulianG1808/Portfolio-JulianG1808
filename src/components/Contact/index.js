@@ -47,7 +47,9 @@ const Contact = () => {
                     </h1>
                     <div className='info-cont'>
                         <p>
-                        Lorem ipsum dolor sit amet. Est voluptate ipsam et voluptas voluptatem ut accusantium molestias 33 sequi consequatur et quia et officia consequuntur. Vel nostrum autem ex voluptas voluptatem hic expedita voluptas id provident veritatis ut iste delectus? Quo corporis internos in veritatis molestiae et consequuntur ipsum eum sequi alias?
+                        Estoy en la busqueda de un trabajo IT, donde pueda desempeñar mis habilidades tecnicas, 
+                        utilizando las ultimas tecnologias que sé y las que pueda aprender. <br />
+                        Tambien busco estar en un buen ambiente laboral, con buenos compañeros y buenos trabajadores.
                         </p>
                     </div>
                     <div className='contact-form'>

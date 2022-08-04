@@ -32,9 +32,22 @@ const About = () => {
                         />  
                     </h1>
                     <div className='info-cont'>
-                        <p>Lorem ipsum dolor sit amet. Est voluptate ipsam et voluptas voluptatem ut accusantium molestias 33 sequi consequatur et quia et officia consequuntur. Vel nostrum autem ex voluptas voluptatem hic expedita voluptas id provident veritatis ut iste delectus? Quo corporis internos in veritatis molestiae et consequuntur ipsum eum sequi alias?</p>
-                        <p>Lorem ipsum dolor sit amet. Est voluptate ipsam et voluptas voluptatem ut accusantium molestias 33 sequi consequatur et quia et officia consequuntur. Vel nostrum autem ex voluptas voluptatem hic expedita voluptas id provident veritatis ut iste delectus? Quo corporis internos in veritatis molestiae et consequuntur ipsum eum sequi alias?</p>
-                        <p>Lorem ipsum dolor sit amet. Est voluptate ipsam et voluptas voluptatem ut accusantium molestias 33 sequi consequatur et quia et officia consequuntur. Vel nostrum autem ex voluptas voluptatem hic expedita voluptas id provident veritatis ut iste delectus? Quo corporis internos in veritatis molestiae et consequuntur ipsum eum sequi alias?</p>
+                        <p>
+                        Soy un Full Stack Web Developer, orientado a FrontEnd y tambien un Técnico Informático.
+                        </p>
+                        <p>
+                        Me considero buen compañero, resolutivo, investigador, adaptable, responsable, autodidacta, tengo la capacidad de estar concentrado.
+                        <br />
+                        Entre otras cosas mas personales, estoy apasionado por el IT, en mi ocio suelo estar jugando algun videojuego, viendo automovilismo deportivo, investigando sobre la mecanica automotriz o aprendiendo nuevas cosas del mundo IT para asi aumentar y mejorar mis saberes en el Tech Stack.
+                        </p>
+                        <p>
+                        Tech Stack: <br />
+                        Con conocimientos en el lenguaje JavaScript; <br />
+                        en FrontEnd: React, Redux, CSS3, HTML5, SASS; <br />
+                        en BackEnd: Express, Sequelize, NodeJS; <br />
+                        Base de Datos: SQL, Postgre; <br />
+                        manejo de versiones con Git.
+                        </p>
                     </div>
                 </div>
 
