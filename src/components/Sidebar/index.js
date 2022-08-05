@@ -2,7 +2,7 @@ import './index.scss'
 import { NavLink } from 'react-router-dom'
 import LogoSubtitle from '../../assets/images/logo_sub.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHome, faMessage, faUser, faBriefcase, faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons'
+import { faHome, faMessage, faUser, faBriefcase, faAngleDoubleRight, faBook } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { useTranslation } from 'react-i18next'
 
@@ -105,6 +105,10 @@ const Sidebar = () => {
                 <NavLink exact='true' activeclassname='active' className='nav-link' to='/portfolio'>
                     <FontAwesomeIcon className='link-icon' icon={faBriefcase} color='#e40046'/>
                     <span className='link-text'>{t("btnPortfolio")}</span>
+                </NavLink>
+                <NavLink exact='true' activeclassname='active' className='nav-link' to='/pdfviewer'>
+                        <FontAwesomeIcon icon={faBook} className='link-icon' color='#e40046'/>
+                        <span className='link-text'>{t("viewCV")}</span>
                 </NavLink>
                 <NavLink exact='true' activeclassname='active' className='nav-link' to='/contact'>
                     <FontAwesomeIcon className='link-icon' icon={faMessage} color='#e40046'/>
