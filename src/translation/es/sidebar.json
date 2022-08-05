@@ -1,3 +1,7 @@
 {
-    "chooseLanguage": "Lenguaje"
+    "chooseLanguage": "Lenguaje",
+    "btnHome": "Inicio",
+    "btnAbout": "Sobre mí",
+    "btnContact": "Contacto",
+    "btnPortfolio": "Proyectos"
 }

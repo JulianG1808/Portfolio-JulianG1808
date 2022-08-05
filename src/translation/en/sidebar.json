@@ -1,3 +1,7 @@
 {
-    "chooseLanguage": "Language"
+    "chooseLanguage": "Language",
+    "btnHome": "Home",
+    "btnAbout": "About me",
+    "btnContact": "Contact me",
+    "btnPortfolio": "Projects"
 }
