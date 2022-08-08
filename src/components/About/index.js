@@ -37,7 +37,14 @@ const About = () => {
                         <p>{t("paragraphFirst")}</p>
                         <p>{t("paragraphSecond")}</p>
                         <p>{t("paragraphThird")}</p>
-                        <p>{t("paragraphFourth")}</p>
+                        <p>
+                            {t("paragraphFourth.line1")} <br />
+                            {t("paragraphFourth.line2")} <br />
+                            {t("paragraphFourth.line3")} <br />
+                            {t("paragraphFourth.line4")} <br />
+                            {t("paragraphFourth.line5")} <br />
+                            {t("paragraphFourth.line6")}
+                        </p>
                     </div>
                 </div>
 

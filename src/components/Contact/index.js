@@ -48,7 +48,10 @@ const Contact = () => {
                         />
                     </h1>
                     <div className='info-cont'>
-                        <p>{t("paragraph")}</p>
+                        <p>
+                            {t("paragraph.line1")} <br />
+                            {t("paragraph.line2")}
+                        </p>
                     </div>
                     <div className='contact-form'>
                         <form ref={refForm} onSubmit={sendEmail}>

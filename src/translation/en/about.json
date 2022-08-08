@@ -4,5 +4,12 @@
     "paragraphFirst": "I'm a Full Stack Web Developer, oriented to FrontEnd and also a Computer Technician",
     "paragraphSecond": "I consider myself a good co-worker, decisive, researcher, adaptable, resposible, self-taught, I have the ability to be focused.",
     "paragraphThird": "Among other more personal things, I am passionate about IT, in my leisure i'm usually playing a video game, watching sports car racing, researching automotive mechanics or learning new things from the IT world in order to increase and improve my knowledge in the Tech Stack.",
-    "paragraphFourth": "Tech Stack: <br /> knowledge in the JavaScript language;  <br /> in  FrontEnd: React, Redux, CSS3, HTML5, SASS; <br /> in BackEnd: Express, Sequelize, NodeJS; <br /> database: SQL, Postgre; <br /> version management with Git."
+    "paragraphFourth": {
+        "line1": "Tech Stack:",
+        "line2": " knowledge in the JavaScript language;",
+        "line3": " in FrontEnd: React, Redux, CSS3, HTML5, SASS;",
+        "line4": " in BackEnd: Express, Sequelize, NodeJS;",
+        "line5": " database: SQL, Postgre;",
+        "line6": " version management with Git."
+    }
 }
