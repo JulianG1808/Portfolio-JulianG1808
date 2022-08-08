@@ -1,7 +1,5 @@
 .nav-bar {
     background: #151515;
-    width: 5rem;
-    height: 100vh;
     position: fixed;
     z-index: 3;
     //min-height: 500px;
@@ -135,7 +133,7 @@
 }
 
 .nav-bar:hover {
-    width: 18rem;
+    
 
     .logo {
         .logo-icon {
@@ -147,21 +145,77 @@
         }
     }
 
-    .lang-icon {
-        width: 7rem;
-        height: 7rem;
-    }
+    
 
-    .lang-text {
-        display: block;
-    }
+}
+
+@media only screen and (max-width: 600px){
+    .nav-bar {
+    bottom: 0;
+    width: 100vw;
+    height: 5rem;
+    flex-direction: row;
 
     nav {
-        width: 18rem;
-        
-        .link-text {
-            display: block;
-        }
+        flex-direction: row;
+        height: 5rem;
+        width: 100vw;
     }
 
+    .lang-link {
+        width: 5rem;
+    }
+
+    .nav-link {
+        height: 100%;
+        width: 5rem;
+    }
+}
+
+    .nav-bar-top {
+        margin-right: auto;
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+
+    .logo {
+        display: none;
+    }
+}
+
+    .nav-bar-bottom {
+        right: 0;
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+    }
+}
+
+@media only screen and (min-width: 601px){
+    .nav-bar {
+        top: 0;
+        width: 5rem;
+        height: 100vh;
+    }
+
+    .nav-bar:hover {
+        width: 18rem;
+
+        .lang-icon {
+            width: 7rem;
+            height: 7rem;
+        }
+    
+        .lang-text {
+            display: block;
+        }
+    
+        nav {
+            width: 18rem;
+            
+            .link-text {
+                display: block;
+            }
+        }
+    }
 }
