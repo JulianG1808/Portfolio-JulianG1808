@@ -106,10 +106,6 @@ const Sidebar = () => {
                     <FontAwesomeIcon className='link-icon' icon={faBriefcase} color='#e40046'/>
                     <span className='link-text'>{t("btnPortfolio")}</span>
                 </NavLink>
-                <NavLink exact='true' activeclassname='active' className='nav-link' to='/pdfviewer'>
-                        <FontAwesomeIcon icon={faBook} className='link-icon' color='#e40046'/>
-                        <span className='link-text'>{t("viewCV")}</span>
-                </NavLink>
                 <NavLink exact='true' activeclassname='active' className='nav-link' to='/contact'>
                     <FontAwesomeIcon className='link-icon' icon={faMessage} color='#e40046'/>
                     <span className='link-text'>{t("btnContact")}</span>
@@ -119,6 +115,13 @@ const Sidebar = () => {
 
         <div className='nav-bar-bottom'>
             <nav>
+                    <a
+                    className='nav-link' 
+                    href={languageDefault === "es" ? '../../assets/CV/Curriculum vitae - Julian Gomez (Español).pdf' : '../../assets/CV/Curriculum vitae - Julian Gomez (English).pdf'}
+                    download>
+                        <FontAwesomeIcon icon={faBook} className='link-icon' color='#e40046'/>
+                        <span className='link-text'>{t("viewCV")}</span>
+                    </a>
                     <a 
                         className='nav-link'
                         target='_blank'

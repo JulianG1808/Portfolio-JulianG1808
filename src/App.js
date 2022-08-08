@@ -5,7 +5,6 @@ import Home from './components/Home'
 import About from './components/About';
 import Contact from './components/Contact';
 import Portfolio from './components/Portfolio';
-import PdfViewer from './components/PDF';
 
 function App() {
   return (
@@ -17,7 +16,6 @@ function App() {
         <Route path='contact' element={<Contact />}/>
         <Route path='portfolio' element={<Portfolio />}/>
       </Route>
-      <Route path='pdfviewer' element={<PdfViewer />}/>
     </Routes>
     </>
   );
