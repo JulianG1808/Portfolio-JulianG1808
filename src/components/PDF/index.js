@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Document, Page } from "react-pdf/dist/esm/entry.webpack";
-import pdfCV from '../../assets/CV/Curriculum vitae - Julian Gomez.pdf'
+import pdfCV from '../../assets/CV/Curriculum vitae - Julian Gomez (English).pdf'
 import Sidebar from "../Sidebar";
 import './index.scss'
 
@@ -13,11 +13,11 @@ const PdfViewer = () => {
     }
 
     return (
-        <div className='containerPdf'>
+        <div>
             <Sidebar />
 
-            <center>
-                <div>
+            <center className='containerPdf'>
+                <div >
                     <Document file={pdfCV} onLoadSuccess={onDucumentLoadSuccess}>
                         {Array.from(
                         new Array(numPages),
