@@ -1,21 +1,21 @@
 import './index.scss'
-import { useEffect, useRef } from 'react'
-import DrawSVGPlugin from 'gsap-trial/DrawSVGPlugin'
-import gsap from 'gsap-trial'
+ import { useEffect, useRef } from 'react'
+// import DrawSVGPlugin from 'gsap-trial/DrawSVGPlugin'
+//  import gsap from 'gsap-trial'
 
 const Logo = () => {
     const bgRef = useRef()
   
-    useEffect(() => {
-      gsap.registerPlugin(DrawSVGPlugin)
+    // useEffect(() => {
+    //   //gsap.registerPlugin(DrawSVGPlugin)
   
-      gsap
-        .timeline()
-        .to(bgRef.current, {
-          duration: 1,
-          opacity: 1,
-        })
-    }, [])
+    //   gsap
+    //     .timeline()
+    //     .to(bgRef.current, {
+    //       duration: 1,
+    //       opacity: 1,
+    //     })
+    // }, [])
   
     return (
       <div className="logo-container" ref={bgRef}>
