@@ -21,6 +21,15 @@ const Sidebar = () => {
         }
     }
 
+    const viewCV = () => {
+        if(languageDefault === "en"){
+            window.open('https://drive.google.com/file/d/1e44kOclgcX1R9l1RBLlG1BIRvVwft0Tc/view')
+        }
+        else if(languageDefault === "es"){
+            window.open('https://drive.google.com/file/d/1TFLF39G0Yd36W4BvBH25cisd-xvT25QC/view')
+        }
+    }
+
     return (
     <div className='nav-bar'>
         <div className='nav-bar-top'>
@@ -58,13 +67,13 @@ const Sidebar = () => {
 
         <div className='nav-bar-bottom'>
             <nav>
-                    <a
+                    <div
                     className='nav-link' 
-                    href={languageDefault === "es" ? '../../assets/CV/Curriculum vitae - Julian Gomez (Español).pdf' : '../../assets/CV/Curriculum vitae - Julian Gomez (English).pdf'}
+                    onClick={viewCV}/* ={languageDefault === "es" ? 'https://drive.google.com/file/d/1e44kOclgcX1R9l1RBLlG1BIRvVwft0Tc/view' : '../../assets/CV/Curriculum vitae - Julian Gomez (English).pdf'} */
                     download>
                         <FontAwesomeIcon icon={faBook} className='link-icon' color='#e40046'/>
                         <span className='link-text'>{t("viewCV")}</span>
-                    </a>
+                    </div>
                     <a 
                         className='nav-link'
                         target='_blank'
