@@ -89,29 +89,6 @@
         border: 2px solid #e40046;
         margin-top: 70px;
 
-        &::before {
-            content: '<button>';
-            font-family: 'La Belle Aurore';
-            font-size: 13px;
-            color: #fff200;
-            position: absolute;
-            margin-top: -40px;
-            left: 15px;
-            opacity: 0.6;
-        }
-
-        &::after {
-            content: '</button>';
-            font-family: 'La Belle Aurore';
-            color: #fff200;
-            font-size: 13px;
-            position: absolute;
-            margin-top: 25px;
-            margin-left: 23px;
-            animation: fadeIn 1s 1.7s backwards;
-            opacity: 0.6;
-        }
-
         &:hover{
             color: #041e42;
             background: #e40046;
