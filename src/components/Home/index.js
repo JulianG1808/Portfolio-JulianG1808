@@ -70,6 +70,10 @@ const Home = () => {
                 </h1>
                 <h2>{t("JobTitle")}</h2>
                 <Link to="/contact" className="flat-button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
                     {t("btnContact")}
                 </Link>
             </div>

@@ -69,7 +69,13 @@ const Contact = () => {
                                     <textarea placeholder={t("inputMessage")} name='message' required></textarea>
                                 </li>
                                 <li>
-                                    <input type='submit' className='flat-button' value={t("inputSend")}/>
+                                    <button type='submit' className='flat-button'>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        {t("inputSend")}
+                                    </button>
                                 </li>
                             </ul>
                         </form>
