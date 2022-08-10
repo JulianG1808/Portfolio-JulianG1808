@@ -1,6 +1,6 @@
 .contact-form {
     width: 100%;
-    margin-top: 20px;
+    margin-top: 4rem;
 
     ul {
         padding: 0;
@@ -161,7 +161,7 @@
         line-height: 18px;
         position: absolute;
         left: -30px;
-        bottom: -20px;
+        //bottom: -20px;
         margin-left: 20px;
         opacity: 0.6;
     }
@@ -206,4 +206,26 @@
     opacity: 0;
     animation: backInRight 1s 1.2s;
     animation-fill-mode: forwards;
+}
+
+@media only screen and (max-width: 600px) {
+    .contact-form {
+        margin-bottom: 10rem;
+
+        ul {
+            li.half {
+                width: 100%;
+                float: center;
+                margin-left: 0;
+            }
+        }
+    }
+    
+    .info-map {
+        display: none;
+    }
+
+    .map-wrap {
+        display: none;
+    }
 }

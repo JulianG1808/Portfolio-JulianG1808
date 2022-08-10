@@ -1,5 +1,5 @@
 .home-page {
-
+    overflow-y: hidden;
     .text-zone {
         position: absolute;
         left: 10%;
@@ -28,6 +28,8 @@
         }
 
         &::after {
+            left: 27rem;
+            bottom: 25rem;
             content: '</h1>';
             font-family: 'La Belle Aurore';
             color: #fff200;
@@ -38,20 +40,11 @@
             animation: fadeIn 5s 1.7s backwards;
             opacity: 0.6;
         }
-
-        // img {
-        //     width: 32px;
-        //     margin-left: 20px;
-        //     opacity: 0;
-        //     height: auto;
-        //     animation: rotateIn 1s linear both;
-        //     animation-delay: 1.4s;
-        // }
     }
     
     h2 {
         color: #8d8d8d;
-        margin-top: 40px;
+        margin-top: 10rem;
         font-weight: 400;
         font-size: 18px;
         font-family: sans-serif;
@@ -99,7 +92,7 @@
         &::before {
             content: '<button>';
             font-family: 'La Belle Aurore';
-            font-size: 18px;
+            font-size: 13px;
             color: #fff200;
             position: absolute;
             margin-top: -40px;
@@ -111,7 +104,7 @@
             content: '</button>';
             font-family: 'La Belle Aurore';
             color: #fff200;
-            font-size: 18px;
+            font-size: 13px;
             position: absolute;
             margin-top: 25px;
             margin-left: 23px;
@@ -185,5 +178,41 @@
             transition: 1s;
             transition-delay: 0.75s;
         }
+    }
+
+    .btnTag {
+        &::before {
+            content: '<button>';
+            font-family: 'La Belle Aurore';
+            font-size: 18px;
+            color: #fff200;
+            position: absolute;
+            margin-top: 40px;
+            left: 15px;
+            opacity: 0.6;
+        }
+
+        &::after {
+            content: '</button>';
+            font-family: 'La Belle Aurore';
+            color: #fff200;
+            font-size: 18px;
+            position: absolute;
+            margin-top: 130px;
+            margin-left: 23px;
+            animation: fadeIn 1s 1.7s backwards;
+            opacity: 0.6;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .home-page {
+
+        .text-zone {
+            left: 7%;
+            width: 90%;
+        }
+
     }
 }

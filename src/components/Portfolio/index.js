@@ -4,6 +4,7 @@ import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters';
 import portfolioData from '../../data/portfolio.json'
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom'
 
 const Portfolio = () => {
     const [t, /* i18n */] = useTranslation('portfolio')
@@ -25,18 +26,20 @@ const Portfolio = () => {
                 {
                     portfolio.map((port, idx) => {
                         return (
-                            <div className="image-box" key={idx}>
-                                <img src={port.cover} alt='portfolio img' className='portfolio-image'/>
-                                <div className='content'>
-                                    <p className='title'>{port.title}</p>
-                                    <h4 className='description'>{port.description}</h4>
-                                    <button 
-                                    className='btn' 
-                                    onClick={() => window.open(port.url)}>
-                                        {t("btnProject")}
-                                    </button>
+                            // <a href={port.url}>
+                                <div className="image-box" key={idx}>
+                                    <img src={port.cover} alt='portfolio img' className='portfolio-image'/>
+                                    <div className='content'>
+                                        <p className='title'>{port.title}</p>
+                                        <h4 className='description'>{port.description}</h4>
+                                        <button 
+                                        className='btn' 
+                                        onClick={() => window.open(port.url)}>
+                                            {t("btnProject")}
+                                        </button>
+                                    </div>
                                 </div>
-                            </div>
+                            // </a>
                         )
                     })
                 }
