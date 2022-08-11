@@ -170,19 +170,17 @@
 
         .nav-link {
             height: 100%;
-            width: 3.5rem;
+            width: 4rem;
             justify-content: center;
             padding: 0;
         }
     }
 
     .nav-bar-top {
-        //margin-right: auto;
         display: flex;
         flex-direction: row;
         height: 100%;
         justify-content: flex-start;
-        
         flex-basis: 5%;
 
     .logo {
@@ -200,11 +198,8 @@
         display: flex;
         flex-direction: row;
         height: 100%;
-        //width: 15rem;
         flex-basis: 5%;
         justify-content: flex-end;
-        //margin-right: 5.5rem;
-        margin-left: 0;
     }
 }
 
