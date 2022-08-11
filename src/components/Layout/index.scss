@@ -43,7 +43,7 @@
     animation-delay: 1s;
 }
 
-.container.portfolio-page, .container.about-page, .container.contact-page {
+.container.portfolio-page, .container.about-page, .container.contact-page, .container.certificates-page {
 
     h1 {
         font-size: 53px;
@@ -162,7 +162,7 @@
         overflow-y: scroll;
     }
 
-    .container.portfolio-page, .container.about-page, .container.contact-page {
+    .container.portfolio-page, .container.about-page, .container.contact-page, .container.certificates-page {
         .text-zone {
             top: 30rem;
             left: 7%;
