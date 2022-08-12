@@ -1,13 +1,15 @@
-import Certificate from "../../../data/imageSlider/Certificate.PNG"
+import Henry from "../../../data/imageSlider/Henry.PNG"
+import EST from "../../../data/imageSlider/EST.jpeg"
+
 
 const ImageSlider = [
     {
         title: "Full Stack Web Developer",
-        url: Certificate
+        url: Henry
     },
     {
-        title: "Second Slider Image",
-        url: Certificate
+        title: "Computer Technician",
+        url: EST
     }
 ]
 

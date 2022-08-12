@@ -9,6 +9,7 @@ const SliderContent = ({ activeIndex, imageSlider }) => {
                     className={idx === activeIndex ? "slides active" : "inactive"}
                     >
                         <img className="slide-image" src={slide.url} alt=""/>
+                        {/* <span className="slide-title">{slide.title}</span> */}
                     </div>
                 ))}
         </section>
