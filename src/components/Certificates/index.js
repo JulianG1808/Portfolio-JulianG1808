@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react'
 import AnimatedLetters from '../AnimatedLetters'
 import Loader from 'react-loaders'
 import { useTranslation } from 'react-i18next'
+import Slider from './Slider/Slider'
 
 
 const Certificates = () => {
@@ -27,6 +28,8 @@ const Certificates = () => {
                         idx={15}
                         />
                     </h1>
+
+                    <Slider />
                 </div>
             </div>
             <Loader type='line-scale' />
