@@ -4,7 +4,6 @@ import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters';
 import portfolioData from '../../data/portfolio.json'
 import { useTranslation } from 'react-i18next';
-import { Link } from 'react-router-dom'
 
 const Portfolio = () => {
     const [t, /* i18n */] = useTranslation('portfolio')
