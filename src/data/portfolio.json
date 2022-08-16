@@ -4,13 +4,15 @@
             "cover": "/portfolio/DogsPI.png",
             "title": "Dogs App",
             "description": "SPA, JavaScript, React, Redux, CSS3, HTML5, Express, NodeJS, Sequelize, PostgreSQL, Git",
-            "url": "https://github.com/JulianG1808/PI-Dogs-GomezJulian"
+            "url": "https://pi-dogs-gomez-julian.vercel.app/",
+            "GitHub": "https://github.com/JulianG1808/PI-Dogs-GomezJulian" 
         },
         {
             "cover": "/portfolio/HenryGames.png",
             "title": "HenryGames",
             "description": "SPA, JavaScript, Auth0, MercadoPago, Passport, React, Redux, CSS3, HTML5, Express, NodeJS, Sequelize, PostgreSQL, Git",
-            "url": "https://henry-games-pg.vercel.app/"
+            "url": "https://henry-games-pg.vercel.app/",
+            "GitHub": "https://github.com/JulianG1808/HenryGames-PG"
         }
     ]
 }
