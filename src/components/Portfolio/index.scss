@@ -77,6 +77,10 @@
             cursor: pointer;
         }
 
+        .btn:last-child {
+            margin-left: 1rem;
+        }
+
         .btn:hover {
             transform: translateY(-3px);
             background: #e40046;
