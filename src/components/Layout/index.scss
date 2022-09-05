@@ -173,7 +173,7 @@
             }
 
             .info-cont {
-                margin-bottom: 8rem;
+                margin-bottom: 3rem;
             }
         }
     }
@@ -196,4 +196,10 @@
     // .bottom-tag-html {
     //     top: 100%;
     // }
+}
+
+@media only screen and (max-height: 800px) {
+    .tags {
+        display: none;
+    }
 }
