@@ -5,10 +5,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHome, faMessage, faUser, faBriefcase, faAngleDoubleRight, faBook, faLanguage, faGraduationCap } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { useTranslation } from 'react-i18next'
+import { useState } from 'react'
 
 const Sidebar = () => {
     const [t, i18n] = useTranslation('sidebar')
     const languageDefault = localStorage.getItem("language")
+    const [showNavbar, setShowNavBar] = useState(false)
 
     const handleChangeLanguage = () => {
         if(languageDefault === "en" || i18n.language === "en") {
@@ -34,36 +36,36 @@ const Sidebar = () => {
     <div className='nav-bar'>
         <div className='only-logo'>
             <NavLink exact='true' activeclassname='active' className='logo' to='/'>
-                <FontAwesomeIcon className='logo-icon' icon={faAngleDoubleRight} color='#e40046'/> 
+                <FontAwesomeIcon onClick={() => showNavbar ? setShowNavBar(false) : setShowNavBar(true)} className={showNavbar ? 'logo-icon' : 'logo-icon active'} icon={faAngleDoubleRight} color='#e40046'/> 
                 <img className='sub-logo' src={LogoSubtitle} alt='julian' />
             </NavLink>
         </div>
-        <div className='full-nav-bar'>
+        <div className={showNavbar ? 'full-nav-bar' : 'full-nav-bar active'}>
             <div className='nav-bar-top'>
                 <div className='nav-link' onClick={() => handleChangeLanguage()}>
-                        <FontAwesomeIcon className='link-icon' icon={faLanguage} color='#e40046'/> 
+                        <FontAwesomeIcon className='link-icon' icon={faLanguage} color='#e40046' /> 
                         <span className='link-text'>{t("chooseLanguage")}</span>
                 </div>
             </div>
             <div className='nav-bar-mid'>
                 <nav>
-                    <NavLink exact='true' activeclassname='active' className='nav-link' to='/'>
+                    <NavLink exact='true' activeclassname='active' className='nav-link' to='/' onClick={() => showNavbar ? setShowNavBar(false) : null}>
                         <FontAwesomeIcon className='link-icon' icon={faHome} color='#e40046'/> 
                         <span className='link-text'>{t("btnHome")}</span>
                     </NavLink>
-                    <NavLink exact='true' activeclassname='active' className='nav-link' to='/about'>
+                    <NavLink exact='true' activeclassname='active' className='nav-link' to='/about' onClick={() => showNavbar ? setShowNavBar(false) : null}>
                         <FontAwesomeIcon className='link-icon' icon={faUser} color='#e40046'/>
                         <span className='link-text'>{t("btnAbout")}</span>
                     </NavLink>
-                    <NavLink exact='true' activeclassname='active' className='nav-link' to='/portfolio'>
+                    <NavLink exact='true' activeclassname='active' className='nav-link' to='/portfolio' onClick={() => showNavbar ? setShowNavBar(false) : null}>
                         <FontAwesomeIcon className='link-icon' icon={faBriefcase} color='#e40046'/>
                         <span className='link-text'>{t("btnPortfolio")}</span>
                     </NavLink>
-                    <NavLink exact='true' activeclassname='active' className='nav-link' to='/certificates'>
+                    <NavLink exact='true' activeclassname='active' className='nav-link' to='/certificates' onClick={() => showNavbar ? setShowNavBar(false) : null}>
                         <FontAwesomeIcon className='link-icon' icon={faGraduationCap} color='#e40046'/>
                         <span className='link-text'>{t("btnCertificates")}</span>
                     </NavLink>
-                    <NavLink exact='true' activeclassname='active' className='nav-link' to='/contact'>
+                    <NavLink exact='true' activeclassname='active' className='nav-link' to='/contact' onClick={() => showNavbar ? setShowNavBar(false) : null}>
                         <FontAwesomeIcon className='link-icon' icon={faMessage} color='#e40046'/>
                         <span className='link-text'>{t("btnContact")}</span>
                     </NavLink>
