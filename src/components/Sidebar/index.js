@@ -33,14 +33,14 @@ const Sidebar = () => {
     }
 
     return (
-    <div className='nav-bar'>
+    <div className={showNavbar ? 'nav-bar active' : 'nav-bar'}>
         <div className='only-logo'>
-            <NavLink exact='true' activeclassname='active' className='logo' to='/'>
-                <FontAwesomeIcon onClick={() => showNavbar ? setShowNavBar(false) : setShowNavBar(true)} className={showNavbar ? 'logo-icon' : 'logo-icon active'} icon={faAngleDoubleRight} color='#e40046'/> 
+            <div activeclassname='active' className='logo'>
+                <FontAwesomeIcon onClick={() => showNavbar ? setShowNavBar(false) : setShowNavBar(true)} className={showNavbar ? 'logo-icon active' : 'logo-icon'} icon={faAngleDoubleRight} color='#e40046'/> 
                 <img className='sub-logo' src={LogoSubtitle} alt='julian' />
-            </NavLink>
+            </div>
         </div>
-        <div className={showNavbar ? 'full-nav-bar' : 'full-nav-bar active'}>
+        <div className={showNavbar ? 'full-nav-bar active' : 'full-nav-bar'}>
             <div className='nav-bar-top'>
                 <div className='nav-link' onClick={() => handleChangeLanguage()}>
                         <FontAwesomeIcon className='link-icon' icon={faLanguage} color='#e40046' /> 

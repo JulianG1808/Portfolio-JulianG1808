@@ -1,7 +1,6 @@
 .nav-bar {
   position: fixed;
-  transition: width 0.3s ease;
-  z-index: 3;
+  transition: all 0.3s ease;
   background-color: #181818;
 
   display: flex;
@@ -118,6 +117,7 @@
     left: 0;
     top: 0;
     height: 100vh;
+    z-index: 3;
 
     .full-nav-bar {
       .nav-link {
@@ -151,12 +151,28 @@
 
 //--------------------------------------- Responsive --------------------------------------
 @media screen and (max-width: 600px) {
+  //------------------------------------- Navbar Inactive --------------------------------------------
   .nav-bar {
     width: 100vw;
     top: 0;
-    height: 100vh;
+    height: 5rem;
     background: transparent;
-    // right: -100%;
+    z-index: 1;
+
+    .full-nav-bar {
+      height: 100%;
+      background: #181818;
+      right: -100%;
+      position: relative;
+      transition: all 0.3s ease;
+  
+      .nav-link {
+  
+        .link-text {
+          display: block;
+        }
+      }
+    }
 
     .only-logo {
       .logo {
@@ -166,37 +182,31 @@
           margin-right: auto;
         }
 
+        .logo-icon {
+          transform: rotate(-180deg);
+        }
+
         .logo-icon.active {
-            transform: rotate(-180deg);
+          transform: rotate(0deg);
         }
       }
     }
   }
+  //------------------------------------------------------------------------------------------------------
 
-  // .only-logo {
-  //   right: 0;
-  // }
+  //------------------------------------- Navbar Active --------------------------------------------
+
+  .nav-bar.active {
+    z-index: 3;
+    height: 100vh;
+  }
 
   .full-nav-bar.active {
     height: 100%;
     background: #181818;
-    right: -100%;
-    position: relative;
-
-    .nav-link {
-
-      .link-text {
-        display: block;
-      }
-    }
-  }
-
-  .full-nav-bar {
-    height: 100%;
-    background: #181818;
     right: 0;
     position: relative;
-    transition: all 0.3s ease;
+    z-index: 3;
 
     .nav-link {
 
@@ -205,6 +215,7 @@
       }
     }
   }
+  //------------------------------------------------------------------------------------------------------
 
 }
 
