@@ -5,10 +5,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHome, faMessage, faUser, faBriefcase, faAngleDoubleRight, faBook, faLanguage, faGraduationCap } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { useTranslation } from 'react-i18next'
+import { useState } from 'react'
 
 const Sidebar = () => {
     const [t, i18n] = useTranslation('sidebar')
     const languageDefault = localStorage.getItem("language")
+    const [showNavbar, setShowNavBar] = useState(false)
 
     const handleChangeLanguage = () => {
         if(languageDefault === "en" || i18n.language === "en") {
@@ -31,74 +33,75 @@ const Sidebar = () => {
     }
 
     return (
-    <div className='nav-bar'>
-        <div className='nav-bar-top'>
-            <NavLink exact='true' activeclassname='active' className='logo' to='/'>
-                <FontAwesomeIcon className='logo-icon' icon={faAngleDoubleRight} color='#e40046'/> 
+    <div className={showNavbar ? 'nav-bar active' : 'nav-bar'}>
+        <div className='only-logo'>
+            <div activeclassname='active' className='logo'>
+                <FontAwesomeIcon onClick={() => showNavbar ? setShowNavBar(false) : setShowNavBar(true)} className={showNavbar ? 'logo-icon active' : 'logo-icon'} icon={faAngleDoubleRight} color='#e40046'/> 
                 <img className='sub-logo' src={LogoSubtitle} alt='julian' />
-            </NavLink>
-
-            <div className='nav-link' onClick={() => handleChangeLanguage()}>
-                    <FontAwesomeIcon className='link-icon' icon={faLanguage} color='#e40046'/> 
-                    <span className='lang-text'>{t("chooseLanguage")}</span>
             </div>
         </div>
-        
-        <div className='nav-bar-mid'>
-            <nav>
-                <NavLink exact='true' activeclassname='active' className='nav-link' to='/'>
-                    <FontAwesomeIcon className='link-icon' icon={faHome} color='#e40046'/> 
-                    <span className='link-text'>{t("btnHome")}</span>
-                </NavLink>
-                <NavLink exact='true' activeclassname='active' className='nav-link' to='/about'>
-                    <FontAwesomeIcon className='link-icon' icon={faUser} color='#e40046'/>
-                    <span className='link-text'>{t("btnAbout")}</span>
-                </NavLink>
-                <NavLink exact='true' activeclassname='active' className='nav-link' to='/portfolio'>
-                    <FontAwesomeIcon className='link-icon' icon={faBriefcase} color='#e40046'/>
-                    <span className='link-text'>{t("btnPortfolio")}</span>
-                </NavLink>
-                <NavLink exact='true' activeclassname='active' className='nav-link' to='/certificates'>
-                    <FontAwesomeIcon className='link-icon' icon={faGraduationCap} color='#e40046'/>
-                    <span className='link-text'>{t("btnCertificates")}</span>
-                </NavLink>
-                <NavLink exact='true' activeclassname='active' className='nav-link' to='/contact'>
-                    <FontAwesomeIcon className='link-icon' icon={faMessage} color='#e40046'/>
-                    <span className='link-text'>{t("btnContact")}</span>
-                </NavLink>
-            </nav>
-        </div>
+        <div className={showNavbar ? 'full-nav-bar active' : 'full-nav-bar'}>
+            <div className='nav-bar-top'>
+                <div className='nav-link' onClick={() => handleChangeLanguage()}>
+                        <FontAwesomeIcon className='link-icon' icon={faLanguage} color='#e40046' /> 
+                        <span className='link-text'>{t("chooseLanguage")}</span>
+                </div>
+            </div>
+            <div className='nav-bar-mid'>
+                <nav>
+                    <NavLink exact='true' activeclassname='active' className='nav-link' to='/' onClick={() => showNavbar ? setShowNavBar(false) : null}>
+                        <FontAwesomeIcon className='link-icon' icon={faHome} color='#e40046'/> 
+                        <span className='link-text'>{t("btnHome")}</span>
+                    </NavLink>
+                    <NavLink exact='true' activeclassname='active' className='nav-link' to='/about' onClick={() => showNavbar ? setShowNavBar(false) : null}>
+                        <FontAwesomeIcon className='link-icon' icon={faUser} color='#e40046'/>
+                        <span className='link-text'>{t("btnAbout")}</span>
+                    </NavLink>
+                    <NavLink exact='true' activeclassname='active' className='nav-link' to='/portfolio' onClick={() => showNavbar ? setShowNavBar(false) : null}>
+                        <FontAwesomeIcon className='link-icon' icon={faBriefcase} color='#e40046'/>
+                        <span className='link-text'>{t("btnPortfolio")}</span>
+                    </NavLink>
+                    <NavLink exact='true' activeclassname='active' className='nav-link' to='/certificates' onClick={() => showNavbar ? setShowNavBar(false) : null}>
+                        <FontAwesomeIcon className='link-icon' icon={faGraduationCap} color='#e40046'/>
+                        <span className='link-text'>{t("btnCertificates")}</span>
+                    </NavLink>
+                    <NavLink exact='true' activeclassname='active' className='nav-link' to='/contact' onClick={() => showNavbar ? setShowNavBar(false) : null}>
+                        <FontAwesomeIcon className='link-icon' icon={faMessage} color='#e40046'/>
+                        <span className='link-text'>{t("btnContact")}</span>
+                    </NavLink>
+                </nav>
+            </div>
 
-        <div className='nav-bar-bottom'>
-            <nav>
-                    <div
-                    className='nav-link' 
-                    onClick={viewCV}/* ={languageDefault === "es" ? 'https://drive.google.com/file/d/1e44kOclgcX1R9l1RBLlG1BIRvVwft0Tc/view' : '../../assets/CV/Curriculum vitae - Julian Gomez (English).pdf'} */
-                    download>
-                        <FontAwesomeIcon icon={faBook} className='link-icon' color='#e40046'/>
-                        <span className='link-text'>{t("viewCV")}</span>
-                    </div>
-                    <a 
-                        className='nav-link'
-                        target='_blank'
-                        rel='noreferrer'
-                        href='https://www.linkedin.com/in/leandrojuliangomez/'
-                    >
-                        <FontAwesomeIcon icon={faLinkedin} className='link-icon' color='#e40046'/>
-                        <span className='link-text'>Linkedin</span>
-                    </a>
-                    <a 
-                        className='nav-link'
-                        target='_blank'
-                        rel='noreferrer'
-                        href='https://github.com/JulianG1808'
-                    >
-                        <FontAwesomeIcon icon={faGithub} className='link-icon' color='#e40046'/>
-                        <span className='link-text'>GitHub</span>
-                    </a>
-            </nav>
+            <div className='nav-bar-bottom'>
+                <nav>
+                        <div
+                        className='nav-link' 
+                        onClick={viewCV}
+                        download>
+                            <FontAwesomeIcon icon={faBook} className='link-icon' color='#e40046'/>
+                            <span className='link-text'>{t("viewCV")}</span>
+                        </div>
+                        <a 
+                            className='nav-link'
+                            target='_blank'
+                            rel='noreferrer'
+                            href='https://www.linkedin.com/in/leandrojuliangomez/'
+                        >
+                            <FontAwesomeIcon icon={faLinkedin} className='link-icon' color='#e40046'/>
+                            <span className='link-text'>Linkedin</span>
+                        </a>
+                        <a 
+                            className='nav-link'
+                            target='_blank'
+                            rel='noreferrer'
+                            href='https://github.com/JulianG1808'
+                        >
+                            <FontAwesomeIcon icon={faGithub} className='link-icon' color='#e40046'/>
+                            <span className='link-text'>GitHub</span>
+                        </a>
+                </nav>
+            </div>
         </div>
-        
     </div>
 )}
 
