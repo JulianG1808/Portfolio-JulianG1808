@@ -26,7 +26,7 @@ const Sidebar = () => {
             window.open('https://drive.google.com/file/d/1e44kOclgcX1R9l1RBLlG1BIRvVwft0Tc/view')
         }
         else if(languageDefault === "es"){
-            window.open('https://drive.google.com/file/d/1TFLF39G0Yd36W4BvBH25cisd-xvT25QC/view')
+            window.open('https://drive.google.com/file/d/16KXnTPvnTX2WK9RF2gf3TafaBWuJs_GW/view')
         }
     }
 
