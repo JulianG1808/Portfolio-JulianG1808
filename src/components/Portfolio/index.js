@@ -4,7 +4,6 @@ import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters';
 import portfolioData from '../../data/portfolio.json'
 import { useTranslation } from 'react-i18next';
-import { Link } from 'react-router-dom'
 
 const Portfolio = () => {
     const [t, /* i18n */] = useTranslation('portfolio')
@@ -34,8 +33,13 @@ const Portfolio = () => {
                                         <h4 className='description'>{port.description}</h4>
                                         <button 
                                         className='btn' 
+                                        onClick={() => window.open(port.GitHub)}>
+                                            {t("btnGithub")}
+                                        </button>
+                                        <button 
+                                        className='btn' 
                                         onClick={() => window.open(port.url)}>
-                                            {t("btnProject")}
+                                            {t("btnDemo")}
                                         </button>
                                     </div>
                                 </div>

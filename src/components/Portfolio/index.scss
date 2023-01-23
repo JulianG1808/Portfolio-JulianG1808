@@ -77,6 +77,10 @@
             cursor: pointer;
         }
 
+        .btn:last-child {
+            margin-left: 1rem;
+        }
+
         .btn:hover {
             transform: translateY(-3px);
             background: #e40046;
@@ -119,7 +123,7 @@
 
         h1.page-title {
             margin-left: 3rem;
-            margin-top: 3rem;
+            margin-top: 8rem;
         }
 
         .images-container{
