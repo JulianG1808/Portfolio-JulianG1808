@@ -13,6 +13,20 @@
             "description": "SPA, JavaScript, Auth0, MercadoPago, Passport, React, Redux, CSS3, HTML5, Express, NodeJS, Sequelize, PostgreSQL, Git",
             "url": "https://henry-games-pg.vercel.app/",
             "GitHub": "https://github.com/JulianG1808/HenryGames-PG"
+        },
+        {
+            "cover": "/portfolio/WeatherAPP.png",
+            "title": "Weather APP",
+            "description": "JavaScript, React, SCSS, HTML5, Git, OpenWeatherAPI, GeoDB",
+            "url": "https://weather-app-jgz.vercel.app/",
+            "GitHub": "https://github.com/JulianG1808/weather-app"
+        },
+        {
+            "cover": "/portfolio/QR-Code.png",
+            "title": "QR Code Challenge",
+            "description": "Challenge Front-End Mentor, JavaScript, React, SCSS, HTML5, Git",
+            "url": "https://qr-code-challenge-react.vercel.app/",
+            "GitHub": "https://github.com/JulianG1808/qr-code-challenge-react"
         }
     ]
 }
