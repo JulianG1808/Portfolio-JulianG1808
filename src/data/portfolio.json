@@ -17,7 +17,7 @@
         {
             "cover": "/portfolio/WeatherAPP.png",
             "title": "Weather APP",
-            "description": "JavaScript, React, SCSS, HTML5, Git, OpenWeatherAPI, GeoDB",
+            "description": "JavaScript, React, SASS, HTML5, Git, OpenWeatherAPI, GeoDB",
             "url": "https://weather-app-jgz.vercel.app/",
             "GitHub": "https://github.com/JulianG1808/weather-app"
         },
@@ -31,7 +31,7 @@
         {
             "cover": "/portfolio/Calculator.png",
             "title": "Calculator App",
-            "description": "JavaScript, React, Git",
+            "description": "JavaScript, React, Git, SASS, Grid & Flexbox CSS",
             "url": "#",
             "GitHub": "https://github.com/JulianG1808/Calculator-App-React"
         },
