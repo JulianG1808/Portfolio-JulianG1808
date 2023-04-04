@@ -22,11 +22,25 @@
             "GitHub": "https://github.com/JulianG1808/weather-app"
         },
         {
-            "cover": "/portfolio/QR-Code.png",
-            "title": "QR Code Challenge",
-            "description": "Challenge Front-End Mentor, JavaScript, React, SCSS, HTML5, Git",
-            "url": "https://qr-code-challenge-react.vercel.app/",
-            "GitHub": "https://github.com/JulianG1808/qr-code-challenge-react"
+            "cover": "/portfolio/TodoList.jpg",
+            "title": "ToDo-List App",
+            "description": "JavaScript, React-Native, Git, Expo Go",
+            "url": "#",
+            "GitHub": "https://github.com/JulianG1808/ToDo-List-App"
+        },
+        {
+            "cover": "/portfolio/Calculator.png",
+            "title": "Calculator App",
+            "description": "JavaScript, React, Git",
+            "url": "#",
+            "GitHub": "https://github.com/JulianG1808/Calculator-App-React"
+        },
+        {
+            "cover": "/portfolio/VideoPlayer.png",
+            "title": "Video Player",
+            "description": "JavaScript, Vite, React, Git",
+            "url": "#",
+            "GitHub": "https://github.com/JulianG1808/video-player"
         }
     ]
 }
