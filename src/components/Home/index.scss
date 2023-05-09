@@ -29,7 +29,7 @@
 
         &::after {
             left: 27rem;
-            bottom: 25rem;
+            bottom: 22rem;
             content: '</h1>';
             font-family: 'La Belle Aurore';
             color: #fff200;
@@ -185,7 +185,7 @@
 
 @media only screen and (max-width: 600px) {
     .home-page {
-
+        margin-top: 2rem;
         .text-zone {
             left: 7%;
             width: 90%;
