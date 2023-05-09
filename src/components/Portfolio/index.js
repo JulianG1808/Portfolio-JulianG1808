@@ -59,13 +59,13 @@ const Portfolio = () => {
   return (
     <>
       <div className="container portfolio-page">
-        <h1 className="page-title">
+        {/* <h1 className="page-title">
           <AnimatedLetters
             letterClass={letterClass}
             strArray={t('title').split('')}
             idx={15}
           />
-        </h1>
+        </h1> */}
         <div>{renderPortfolio(portfolioData.portfolio)}</div>
       </div>
       <Loader type="line-scale" />
