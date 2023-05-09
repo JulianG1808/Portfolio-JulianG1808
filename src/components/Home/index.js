@@ -44,8 +44,6 @@ const Home = () => {
 
                     <span> </span>
 
-                    {/* <img src={LogoTitle} alt="developer" /> */}
-
                     <AnimatedLetters 
                     letterClass={letterClass}
                     strArray={nameArray}
