@@ -25,7 +25,7 @@ const Sidebar = () => {
 
     const viewCV = () => {
         if(languageDefault === "en"){
-            window.open('https://drive.google.com/file/d/1e44kOclgcX1R9l1RBLlG1BIRvVwft0Tc/view?usp=share_link')
+            window.open('https://drive.google.com/file/d/1SX0bJ3KmCqMxLAM79bpJjhs6atK7ifgR/view?usp=share_link')
         }
         else if(languageDefault === "es"){
             window.open('https://drive.google.com/file/d/1HnITJrnWCAOLtfedzJMJrSawIcOYZ4RV/view?usp=share_link')
