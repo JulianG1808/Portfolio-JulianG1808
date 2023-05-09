@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import './index.scss'
 import Loader from 'react-loaders'
-import AnimatedLetters from '../AnimatedLetters'
+// import AnimatedLetters from '../AnimatedLetters'
 import portfolioData from '../../data/portfolio.json'
 import { useTranslation } from 'react-i18next'
 
 const Portfolio = () => {
   const [t /* i18n */] = useTranslation('portfolio')
-  const [letterClass, setLetterClass] = useState('text-animate')
+  const [/* letterClass */, setLetterClass] = useState('text-animate')
 
   useEffect(() => {
     const timer = setTimeout(() => {
