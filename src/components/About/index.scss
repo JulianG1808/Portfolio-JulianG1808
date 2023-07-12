@@ -78,11 +78,8 @@
     }
 }
 
-@media screen and (max-width: 1200px) {
+@media only screen and (max-width: 600px) {
     .stage-cube-cont {
-        position: initial;
-        width: 100%;
-        height: 300px;
-        overflow: visible;
+        display: none;
     }
 }
