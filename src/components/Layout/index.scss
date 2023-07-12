@@ -157,7 +157,6 @@
 @media screen and (max-width: 1200px) { 
     .page {
         position: initial;
-        padding: 15px;
     }
 
     .container {
@@ -165,9 +164,30 @@
         height: auto;
         min-height: auto;
 
+        h1 {
+            &::before,
+            &::after {
+                display: none;
+            }
+        }
+        
+        .info-cont {
+            &::before,
+            &::after {
+                display: none;
+            }
+        }
+
         &.about-page,
         &.contact-page,
         &.portfolio-page {
+            h1 {
+                margin-bottom: 0; 
+            }
+
+            .info-cont {
+                padding: 0;
+            }
 
             .text-zone {
                 position: initial;

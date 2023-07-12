@@ -1,5 +1,4 @@
 .home-page {
-    overflow-y: hidden;
     .text-zone {
         position: absolute;
         left: 10%;
@@ -193,6 +192,7 @@
     }
 
     .home-page {
+        height: 100vh;
         
         .text-zone {
             position: initial;

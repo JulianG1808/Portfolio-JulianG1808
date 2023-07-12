@@ -209,17 +209,12 @@
 }
 
 @media only screen and (max-width: 1200px) {
-    // .contact-form {
-    //     margin-bottom: 12rem;
-
-    //     ul {
-    //         li.half {
-    //             width: 100%;
-    //             float: center;
-    //             margin-left: 0;
-    //         }
-    //     }
-    // }
+    .contact-form {
+        &::before,
+        &::after {
+            display: none;
+        }
+    }
     
     .map-wrap {
         float: none;
