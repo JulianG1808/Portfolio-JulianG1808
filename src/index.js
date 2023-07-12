@@ -13,7 +13,6 @@ import about_en from './translation/en/about.json'
 import contact_en from './translation/en/contact.json'
 import portfolio_en from './translation/en/portfolio.json'
 import sidebar_en from './translation/en/sidebar.json'
-import certificates_en from './translation/en/certificates.json'
 
 //language Spanish
 import home_es from './translation/es/home.json'
@@ -21,7 +20,6 @@ import about_es from './translation/es/about.json'
 import contact_es from './translation/es/contact.json'
 import portfolio_es from './translation/es/portfolio.json'
 import sidebar_es from './translation/es/sidebar.json'
-import certificates_es from './translation/es/certificates.json'
 
 const languageDefault = localStorage.getItem("language") ? localStorage.getItem("language") : "en"
 
@@ -34,16 +32,14 @@ i18next.init({
       about: about_es,
       contact: contact_es,
       portfolio: portfolio_es,
-      sidebar: sidebar_es,
-      certificates: certificates_es
+      sidebar: sidebar_es
     },
     en:{
       home: home_en,
       about: about_en,
       contact: contact_en,
       portfolio: portfolio_en,
-      sidebar: sidebar_en,
-      certificates: certificates_en
+      sidebar: sidebar_en
     }
   }
 })
