@@ -57,16 +57,18 @@
 
     .nav-bar-top {
       width: 100%;
-      margin-bottom: auto;
+      top: 0;
     }
 
     .nav-bar-mid {
       width: 100%;
+      margin-bottom: auto;
+      margin-top: auto;
     }
 
     .nav-bar-bottom {
       width: 100%;
-      margin-top: auto;
+      bottom: 0;
     }
 
     .nav-link {
@@ -112,7 +114,7 @@
   //-------------------------------------------------------------------------------------
 }
 
-@media only screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .nav-bar {
     width: 5rem;
     left: 0;
@@ -168,12 +170,10 @@
       transition: all 0.3s ease;
 
       .nav-bar-bottom {
-        width: 100%;
-        margin-top: auto;
+        margin-bottom: 50px;
       }
   
       .nav-link {
-  
         .link-text {
           display: block;
         }
