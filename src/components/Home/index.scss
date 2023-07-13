@@ -28,7 +28,7 @@
 
         &::after {
             left: 27rem;
-            bottom: 22rem;
+            bottom: 20rem;
             content: '</h1>';
             font-family: 'La Belle Aurore';
             color: #fff200;
@@ -43,7 +43,7 @@
     
     h2 {
         color: #8d8d8d;
-        margin-top: 10rem;
+        margin-top: 4rem;
         font-weight: 400;
         font-size: 18px;
         font-family: sans-serif;
@@ -182,13 +182,59 @@
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media screen and (max-width: 1200px) {
+    .tags,
+    .home-page h1::before,
+    .home-page h1::after,
+    .home-page h2::before,
+    .home-page h2::after {
+        display: none;
+    }
+
     .home-page {
         height: 100vh;
+
+        h2 {
+            margin-top: 1.5rem;
+        }
         
         .text-zone {
-            left: 7%;
-            width: 90%;
+            position: initial;
+            width: 100%;
+            transform: none;
+            padding: 10px;
+            padding-top: 5rem;
+            box-sizing: border-box;
+        }
+
+        .flat-button {
+            float: none;
+            display: block;
+            margin: 20px auto 0 auto;
+            width: 200px;
+            text-align: center;
+
+
+        }
+
+        .btnTag {
+            &::before,
+            &::after {
+                display: none;
+            }
+        }
+
+        .logo-container {
+            position: relative;
+            width: 150px;
+            height: auto;
+            top: -170px;
+            right: 0;
+            left: 0;
+            box-sizing: border-box;
+            margin: auto;
+            display: flex;
+            justify-content: center;
         }
 
     }
